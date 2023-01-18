@@ -98,6 +98,7 @@ li a {
 /* ------------------------------------------ MAIN ------------------------------------------*/
 main{
     background-color: gainsboro;
+    padding-bottom: 20px;
 }
 .full-main{
     width: 90vw;
@@ -117,6 +118,7 @@ article{
     border: solid 1px #ebebeb;
     width: 100%;
     height: auto;
+    background-color: white;
 }
 
 article:hover{
