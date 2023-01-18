@@ -5,10 +5,6 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
-app.listen(PORT, () => {
-    console.log('server listening on port 3000')
-});
-
 app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/home.html'));
 });
@@ -19,4 +15,8 @@ app.get("/register", (req, res) => {
 
 app.get("/login", (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/login.html'));
+});
+
+app.listen(PORT, () => {
+    console.log('server listening on port 3000')
 });
