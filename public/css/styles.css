@@ -96,15 +96,15 @@ li a {
 }
 
 /* ------------------------------------------ MAIN ------------------------------------------*/
-main{
+/* main{
     background-color: gainsboro;
     padding-bottom: 20px;
-}
-.full-main{
+} */
+main{
     width: 90vw;
     margin:auto;
     text-align: center;
-    background-color: white
+    background-color: gainsboro;
 }
 
 .main-title{
