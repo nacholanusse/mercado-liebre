@@ -29,10 +29,28 @@ header {
 
 .logoHeader {
     width: 45%;
-    margin-right: 60px;
-    margin-top: 20px;
-    margin-left: 20px;
     height: auto;
+}
+
+.search-field {
+    width: 35vw;
+    padding: 5px 30px 5px 5px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+  
+.search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -33px;
+}
+  
+.search-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
 }
 
 header input{
@@ -42,7 +60,7 @@ header input{
 
 .header-title {
     text-align: center;
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: lighter;
     margin-top: 15px;
 }
@@ -79,15 +97,19 @@ li a {
 
 /* ------------------------------------------ MAIN ------------------------------------------*/
 main{
+    background-color: gainsboro;
+}
+.full-main{
     width: 90vw;
     margin:auto;
     text-align: center;
+    background-color: white
 }
 
 .main-title{
     font-size: 16px;
     text-align: left;
-    margin-top: 12px;
+    padding-top: 12px;
 }
 
 article{
@@ -101,8 +123,7 @@ article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
-img {
-    width: 20vw;
+main img {
     width: 100%;
     height: auto;
 }
@@ -208,9 +229,18 @@ footer section h3{
 
 /* TABLETS */
 @media (min-width: 361px){
-    top-header{
+    .top-header{
         display: flex;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3% 2%;
+    }
+    .LOGO img{
+        width: 25vw;
+    }
+    header h3{
+        width: 20vw;
+        padding-left: 4%;
     }
     header nav {
         display: flex;
@@ -218,15 +248,11 @@ footer section h3{
     }
     .lista1 {
         display: flex;
-        justify-content: flex-start;
-        justify-content: space-around;
         margin-left: 10px;
         list-style-type: none; 
     }
     .lista2 {
         display: flex;
-        justify-content: flex-end;
-        justify-content: space-around;
         margin-right: 10px;
         list-style-type: none;  
     }
@@ -238,6 +264,7 @@ footer section h3{
     }
     header nav ul a{
         margin: 8px;
+        width: 10vw;
     }
     .burger-menu{
         display: none;
@@ -255,6 +282,10 @@ footer section h3{
 
 /* DESKTOP */
 @media (min-width: 769px){
+    header h3{
+        width: 30vw;
+        font-size: 20px;
+    }
     article{
         width: 20vw;
     }
