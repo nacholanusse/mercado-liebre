@@ -32,6 +32,10 @@ header {
     height: auto;
 }
 
+.top-header{
+    padding: 4% 3%;
+}
+
 .search-field {
     width: 35vw;
     padding: 5px 30px 5px 5px;
@@ -91,20 +95,15 @@ li a {
     margin-top: 7px;
 }
 
-.home-banner img{
+.home-banner{
     width: 100%;
 }
 
 /* ------------------------------------------ MAIN ------------------------------------------*/
-/* main{
-    background-color: gainsboro;
-    padding-bottom: 20px;
-} */
 main{
-    width: 90vw;
     margin:auto;
-    text-align: center;
-    background-color: gainsboro;
+    background-color: #ebebeb;
+    padding: 2% 5% 5% 5%;
 }
 
 .main-title{
@@ -144,7 +143,6 @@ main img {
 main section article:hover h4{
     display: block;
 }
-
 
 /* camioncito envio */
 main section article i{
@@ -189,7 +187,6 @@ article h4{
 /* ------------------------------------------ FOOTER ------------------------------------------ */
 
 footer{
-    margin-top: 25px;
     text-align: center;
 }
 
@@ -259,10 +256,10 @@ footer section h3{
         list-style-type: none;  
     }
     .nav-buttons1{
-        margin-right: 8px;
+        margin-right: 5px;
     }
     .nav-buttons2{
-        margin-left: 8px;
+        margin-left: 5px;
     }
     header nav ul a{
         margin: 8px;
@@ -279,6 +276,18 @@ footer section h3{
     }
     article{
         width: 40vw;
+    }
+    .footer-article{
+        padding: 1% 10%;
+    }
+}
+
+@media (max-width: 768px){
+    .header-title {
+        font-size: 0.7rem;
+    }
+    li a {
+        font-size: 0.6rem;
     }
 }
 
@@ -311,6 +320,6 @@ footer section h3{
     }
     
     .footer-article{
-        padding: 40px;
+        padding: 4% 3%;
     }
 }
