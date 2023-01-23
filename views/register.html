@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercado Liebre</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/forms.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" >
   </head>
@@ -40,36 +40,63 @@
     </header>
     
     <main>
+        <h3>Creá tu cuenta</h3>
         <form action="/">
             <div class="datos-personales">
-                <input type="text" name="name" placeholder="Nombre & Apellido">
+                <h4>Nombre y Apellido</h4>
+                <input type="text" name="name" placeholder="Ej: Juan Pérez">
+                <br>
+                <br>
+                
+                <h4>Nombre de usuario</h4>
+                <input type="text" name="user" placeholder="Ej: JPerez">
+                <br>
                 <br>
             
-                <input type="text" name="user" placeholder="Nombre de usuario">
+                <h4>Email</h4>
+                <input type="email" name="email" placeholder="Ej: juanperez@email.com">
+                <br>
+                <br>
+
+                <h4>Domicilio</h4>
+                <input type="text" name="addres" id="addres" placeholder="Domicilio">
+                <br>
                 <br>
             
-                <input type="email" name="email" placeholder="Email">
-                <br>
-            
-                <label for="date">Fecha de nacimiento</label>
+                <h4>Fecha de nacimiento</h4>
                 <input type="date" name="date" id="date">
                 <br>
-            
-                <input type="text" name="addres" id="addres" placeholder="Domicilio">
                 <br>
             </div>
 
             <div class="perfil-usuario">
-                <label for="">Perfil del Usuario</label>
-                <br>
+                <h4>Perfil de usuario</h4>
                 <input type="radio" value="comprador" name="user-profile" id="">Comprador
                 <input type="radio" value="vendedor" name="user-profile" id="">Vendedor
                 <br>
-            </div>
-            
-            <div class="intereses">
-                <label for="">Intereses</label>
                 <br>
+            </div>
+        
+            <div>
+                <h4>Contraseña</h4>
+                <input type="password" name="" placeholder="">
+                <br>
+                <br>
+                <h4>Confirmar contraseña</h4>
+                <input type="password-confirm" name="" placeholder="">
+                <br>
+                <br>
+            </div>
+
+            <div>
+                <h4>Foto de perfil</h4>
+                <input type="file" name="photo" id="photo">
+                <br>
+                <br>
+            </div>
+
+            <div class="intereses">
+                <h4>Intereses</h4>
                 <input type="checkbox" name="Intereses" value="1">Electro
                 <br>
                 <input type="checkbox" name="Intereses" value="2">Moda
@@ -80,22 +107,13 @@
                 <br>
                 <input type="checkbox" name="Intereses" value="5">Vida sana
                 <br>
-            </div>
-        
-            <div>
-                <input type="file" name="photo" id="photo">
                 <br>
-            </div>
-        
-            <div>
-                <input type="password" name="" placeholder="Contraseña">
-                <br>
-                <input type="password-confirm" name="" placeholder="Confirmar contraseña">
                 <br>
             </div>
 
             <div>
                 <button type="submit">Enviar</button>
+                <br>
                 <br>
                 <button type="reset">Borrar</button>
             </div>
@@ -104,7 +122,6 @@
     </main>
 
     <footer>
-      <h4 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
     </footer>
   </body>
 </html>
